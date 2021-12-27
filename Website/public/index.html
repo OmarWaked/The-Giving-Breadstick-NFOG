@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<title>The Giving Breadstick</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  	<script src="sweetalert2.all.min.js"></script>
+    <script src="js/loading-spinner.js"></script>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	  <link href="css/styles.css" rel="stylesheet">
+
+	  <!-- Favicon  -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥖</text></svg>">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60NN8BVF0P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-60NN8BVF0P');
+    </script>
+
+    <!-- Connect Wallet -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+
+    <!-- Scripts -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="javascript/core.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll">
+    <!-- Navigation -->
+    <nav id="navBar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand logo-text" href="index.html">🥖 NFOG Giving Breadstick</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item"></li>
+                </ul>
+                <span class="nav-item">
+                    <button class="btn-solid-lg" id="connectButton" onclick="connectWallet(); return false">Connect Wallet</button>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h1 class="h1-large">Get 1 NFOG Franchise-Specific NFT</h1>
+                        <p class="p-large">All 880 NFOG locations have a unique limited set of NFTs that are given to loyal Olive Garden visitors.
+                          <br>Locate the inconspicuous breadstick at an Olive Garden and then click the button below to verify your location.</p>
+                        <button class="btn-solid-lg" onclick="verifyLocation(); return false">I'm at an Olive Garden!</button>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>WYHYF
+                      <br>
+                      <br>
+                      built by onmeta.eth for the NFOG family
+                    </h4>
+                    <h4>🥖🥖 <a href="https://nonfungibleolivegardens.com/">  NFOG Website</a> 🥖🥖</h4>
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/omarnwaked">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://github.com/OmarWaked/NFOG">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+</body>
+</html>
