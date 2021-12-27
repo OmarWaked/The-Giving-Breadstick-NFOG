@@ -9,20 +9,19 @@ NFOG website: https://nonfungibleolivegardens.com/
 
 List of materials needed: https://docs.google.com/spreadsheets/d/100SZUKxywlbfXKW15M10dYJA-CAAfKpAGyfBlW-h5Jc/edit?usp=sharing
 
+<br>
 
 
 # TODO 
 
-I've outlined what still needs to be done for this project to really work as intended.
+I've outlined what still needs to be done for this project to really work as intended in the seperate files where they should be implemented.
 
 Here is an outline:
 1. Device firmware should send a sercert code to the website to indentify the location
 2. Query the database of nfts that are not issued yet for the given location and then transfer the nft to the user
 
 
-Documentation: 
-
-
+# Documentation: 
 
 web3, wallet connection, sending token
 https://docs.moralis.io/moralis-server/sending-assets
