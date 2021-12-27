@@ -20,6 +20,7 @@ Here is an outline:
 1. Device firmware should send a sercert code to the website to indentify the location
 2. Query the database of nfts that are not issued yet for the given location and then transfer the nft to the user
 
+<br>
 
 # Documentation: 
 
